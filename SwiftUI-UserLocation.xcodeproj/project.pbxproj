@@ -7,18 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE287E4C27FA068400F900A6 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE287E4B27FA068400F900A6 /* MapViewModel.swift */; };
 		DE83E08327F9F9E900B73020 /* SwiftUI_UserLocationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83E08227F9F9E900B73020 /* SwiftUI_UserLocationApp.swift */; };
-		DE83E08527F9F9E900B73020 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83E08427F9F9E900B73020 /* ContentView.swift */; };
+		DE83E08527F9F9E900B73020 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83E08427F9F9E900B73020 /* MapView.swift */; };
 		DE83E08727F9F9EA00B73020 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE83E08627F9F9EA00B73020 /* Assets.xcassets */; };
 		DE83E08A27F9F9EB00B73020 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE83E08927F9F9EB00B73020 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE287E4B27FA068400F900A6 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		DE83E07F27F9F9E900B73020 /* SwiftUI-UserLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-UserLocation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE83E08227F9F9E900B73020 /* SwiftUI_UserLocationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_UserLocationApp.swift; sourceTree = "<group>"; };
-		DE83E08427F9F9E900B73020 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DE83E08427F9F9E900B73020 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		DE83E08627F9F9EA00B73020 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE83E08927F9F9EB00B73020 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DE83E09027F9FF4500B73020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +54,10 @@
 		DE83E08127F9F9E900B73020 /* SwiftUI-UserLocation */ = {
 			isa = PBXGroup;
 			children = (
+				DE83E09027F9FF4500B73020 /* Info.plist */,
 				DE83E08227F9F9E900B73020 /* SwiftUI_UserLocationApp.swift */,
-				DE83E08427F9F9E900B73020 /* ContentView.swift */,
+				DE83E08427F9F9E900B73020 /* MapView.swift */,
+				DE287E4B27FA068400F900A6 /* MapViewModel.swift */,
 				DE83E08627F9F9EA00B73020 /* Assets.xcassets */,
 				DE83E08827F9F9EB00B73020 /* Preview Content */,
 			);
@@ -137,8 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE83E08527F9F9E900B73020 /* ContentView.swift in Sources */,
+				DE83E08527F9F9E900B73020 /* MapView.swift in Sources */,
 				DE83E08327F9F9E900B73020 /* SwiftUI_UserLocationApp.swift in Sources */,
+				DE287E4C27FA068400F900A6 /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +278,8 @@
 				DEVELOPMENT_TEAM = 88343YYU48;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-UserLocation/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to show it on the map.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,6 +309,8 @@
 				DEVELOPMENT_TEAM = 88343YYU48;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-UserLocation/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to show it on the map.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
